@@ -3,7 +3,7 @@ from fp32 import decode_fp32, is_greater_absolute_fp32
 from functools import cmp_to_key
 
 # E8M0 - 8 bit exponent 0 bit mantissa, with bias = 127
-# MXFP8 microscaling 8 bit floating point w/ single E8M0 scale factor
+# MXFP8 microscaling 8 bit floating point with single E8M0 scale factor
 # 32 values of E4M3 (block-wise scaling) for computing dot product
 
 def shift_with_negatives(x: int, scale: int, direction='left') -> int:
